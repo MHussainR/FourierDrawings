@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="./fourier.js"></script>
+    <script src="./drawingPoints.js"></script>
+    
+  </head>
+
+  <body>
+    <!-- <script src="sketch.js"></script> -->
+
+    <h1>Welcome To</h1>
+
+    <video width = "800" height = "350" autoplay loop>
+      <source src="./Assets/Fourier Drawing logo.webm" type="video/webm">
+    Your browser does not support the video tag.
+    </video>
+
+    <h3>Choose an Option</h3>
+    <button onclick="redirectToDrawingPage()">Drawing</button>
+    <button onclick="redirectToHandmadePage()">Handmade</button>
+
+    <script>
+      function redirectToDrawingPage() {
+            window.location.href = 'drawing.html';
+        }
+
+        function redirectToHandmadePage() {
+            window.location.href = 'handmade.html';
+        }
+    </script>
+  </body>
+</html>

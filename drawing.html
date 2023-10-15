@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="./fourier.js"></script>
+    <script src="./drawingPoints.js"></script>
+
+    <script src="./src/CCapture.js"></script>
+    <script src="./src/webm-writer-0.2.0.js"></script>
+    <script src="./src/download.js"></script>
+
+    <script>
+      var capturer = new CCapture ({
+      format: 'webm',
+      framerate: 60,
+      verbose: true
+      })
+      </script>
+  </head>
+
+  <body>
+    
+    <button id = "circleToggle" onclick="ShowCircles()">Circles</button>
+    <button id = "lineToggle" onclick="Showlines()">Lines</button> 
+
+    <script src="drawing.js"></script>
+
+  </body>
+</html>
